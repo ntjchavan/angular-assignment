@@ -1,0 +1,33 @@
+.table-container {
+  padding: 16px;
+  max-width: 800px;
+  margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+.component-title {
+  text-align: left;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 16px;
+  font-weight: bold;
+}

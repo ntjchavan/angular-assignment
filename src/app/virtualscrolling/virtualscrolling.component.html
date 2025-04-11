@@ -1,0 +1,6 @@
+<p>Display numbers in list by Virtual Scrolling</p>
+<cdk-virtual-scroll-viewport itemSize="40" class="viewport">
+    <div *cdkVirtualFor="let num of aiNumbers" class="item">
+        Item - {{ num }}
+    </div>
+</cdk-virtual-scroll-viewport>

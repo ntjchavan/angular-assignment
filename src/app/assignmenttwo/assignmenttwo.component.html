@@ -1,0 +1,35 @@
+<h2 class="component-title"> Original string : {{ reverseString }}</h2>
+<h2 class="component-title"> Reverse string : {{ reverseString | reversestring }}</h2>
+
+<h3 class="component-title">
+    <p>Promise data</p>
+    <p> {{ dataPromise | async }} </p>
+</h3>
+
+<ul>
+    <li *ngFor="let item of objArray">
+        {{ item.TrainingRequestNo }} - {{ item.TrainingName }} - {{ item.TrainingMode }} {{ item.Duration }}
+    </li>
+</ul>
+
+<!-- 
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Training Request No</th>
+                <th>Training Name</th>
+                <th>Training Mode</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of objArray">
+                <td>{{ item.TrainingRequestNo }}</td>
+                <td>{{ item.TrainingName }}</td>
+                <td>{{ item.TrainingMode }}</td>
+                <td>{{ item.Duration }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->

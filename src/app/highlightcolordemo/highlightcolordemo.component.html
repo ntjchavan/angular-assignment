@@ -1,0 +1,7 @@
+<h3>Mouse Hover Highlight Element Demo</h3>
+<label for="color">Enter color name:</label>
+<input id="color" type="text" [(ngModel)] = "userColor" placeholder="e.g. pink, #ff0000"/>
+
+<div class="hover-box" [appHighlight]="userColor">
+    Hover me to see the Highlight!
+</div>
