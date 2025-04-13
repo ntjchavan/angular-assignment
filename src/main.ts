@@ -4,9 +4,10 @@ import { AppComponent } from './app/app.component';
 import { DatabasecmpComponent } from './app/databasecmp/databasecmp.component';
 import { UitoolsComponent } from './app/uitools/uitools.component';
 
-const useDatabaseCmp = true; // Component will load based on conditions
+// Component will load based on conditions, you can do it dynamically
+const useDatabaseCmp = false;
 
-//const rootComponent = useDatabaseCmp ? DatabasecmpComponent : UitoolsComponent;
+const rootComponent = useDatabaseCmp ? DatabasecmpComponent : UitoolsComponent;
 
 
 bootstrapApplication(AppComponent, appConfig)

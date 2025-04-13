@@ -1,0 +1,7 @@
+<h2>Indian cricket team - Drap and drop functionality</h2>
+
+<div cdkDropList (cdkDropListDropped)="drop($event)" class="list-container">
+    <div *ngFor="let player of players" cdkDrag class="player-item">
+        {{ player }}
+    </div>
+</div>
